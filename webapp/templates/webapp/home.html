@@ -1,0 +1,8 @@
+{%extends 'webapp/base.html'%}
+{%block title%}Home{%endblock%}
+{% block content %}
+    <div class="field">
+        <h1>Welcome {{request.user}}</h1>
+        <a href="/logout"><button type="button" class="btn btn-primary">Logout</button></a>
+    </div>
+{% endblock %}
